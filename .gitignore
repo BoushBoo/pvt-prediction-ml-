@@ -173,5 +173,7 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-# Ignore local dataset folder
+# Ignore local dataset folder & training files
 Dataset/
+catboost_info/
+
