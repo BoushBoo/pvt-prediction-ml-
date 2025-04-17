@@ -1,3 +1,9 @@
+![Python](https://img.shields.io/badge/Python-3.9-blue)
+![Pb RMSE](https://img.shields.io/badge/Pb%20RMSE-___-orange)
+![Pb R²](https://img.shields.io/badge/Pb%20R²-___-brightgreen)
+![Last Commit](https://img.shields.io/github/last-commit/boushboo/pvt-prediction-ml)
+
+
 # PVT Prediction Using Machine Learning
 
 This project focuses on predicting **bubble point pressure (Pb)** and **oil formation volume factor (Bob)** using various machine learning models trained on real reservoir data from multiple wells.
