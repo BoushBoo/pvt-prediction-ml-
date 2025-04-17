@@ -1,7 +1,7 @@
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
 ![Pb RMSE](https://img.shields.io/badge/Pb%20RMSE-___-orange)
 ![Pb R²](https://img.shields.io/badge/Pb%20R²-___-brightgreen)
-![Last Commit](https://img.shields.io/github/last-commit/boushboo/pvt-prediction-ml)
+![Last Commit](https://img.shields.io/github/last-commit/boushboo/pvt-prediction-ml-)
 
 
 # PVT Prediction Using Machine Learning
