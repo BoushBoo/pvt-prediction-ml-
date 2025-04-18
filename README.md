@@ -21,8 +21,6 @@ pvt-prediction-ml/
 ├── Dataset/           ← Raw datasets (excluded from GitHub)
 ├── Phase 1/           ← Notebooks for simple baseline models
 ├── Phase 2/           ← Notebooks for more complex ML models
-├── results/           ← Final tables, metrics, and visualizations
-├── catboost_info/     ← Training logs (ignored)
 ├── README.md
 └── .gitignore
 ```
