@@ -1,8 +1,8 @@
 ![Python](https://img.shields.io/badge/Python-3.9-blue)
-![Pb RMSE](https://img.shields.io/badge/Pb%20RMSE-___-orange)
-![Pb R²](https://img.shields.io/badge/Pb%20R²-___-brightgreen)
-![Bob RMSE](https://img.shields.io/badge/Bob%20RMSE-___-orange)
-![Bob R²](https://img.shields.io/badge/Bob%20R²-___-brightgreen)
+![Pb RMSE](https://img.shields.io/badge/Pb%20RMSE-290.75-orange)
+![Pb R²](https://img.shields.io/badge/Pb%20R²-0.9407-brightgreen)
+![Bob RMSE](https://img.shields.io/badge/Bob%20RMSE-0.04486-orange)
+![Bob R²](https://img.shields.io/badge/Bob%20R²-0.9654-brightgreen)
 ![Last Commit](https://img.shields.io/github/last-commit/boushboo/pvt-prediction-ml-)
 
 
