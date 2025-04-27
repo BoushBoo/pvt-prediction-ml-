@@ -177,3 +177,7 @@ cython_debug/
 Dataset/
 catboost_info/
 Headers/
+
+# Ignore Desktop Services Store Files
+**/.DS_Store
+
