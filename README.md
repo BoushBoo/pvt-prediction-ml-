@@ -60,12 +60,11 @@ Explores simple ML models:
 Focuses on:
 - XGBoost
 - CatBoost
-- Neural Networks
-- Stacked Ensembles
-- Mixture of Experts
-- Log-transformation
-- Feature importance and ablation
-- Outlier handling
+- Neural Network
+- Stacked Ensemble
+- Extra Trees 
+- Deep Neural Network
+
 
 ---
 
@@ -81,7 +80,6 @@ Each model is evaluated using:
 Visualizations include:
 - Actual vs Predicted scatter plots
 - Bar plots comparing metrics
-- Feature importance plots
 
 ---
 
