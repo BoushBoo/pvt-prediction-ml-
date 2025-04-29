@@ -181,3 +181,9 @@ Headers/
 # Ignore Desktop Services Store Files
 **/.DS_Store
 
+# Ignore temp and backup files
+~$*
+*.tmp
+*.bak
+*.swp
+
