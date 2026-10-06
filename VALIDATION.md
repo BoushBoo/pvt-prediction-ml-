@@ -1,12 +1,42 @@
-# Validation performed
+# Software Validation
 
-Validation uses synthetic input, not the private reservoir data. All production neural and stacking architectures are exercised with short, explicitly overridden training budgets; full production hyperparameter grids have not been run.
+## Automated checks
 
-- `pytest -q`: 13 tests passed, no skips. Tests cover actual estimator fit memberships, scaler fit isolation, held-out-label perturbation, seeded repeatability, original stacking/NN/DNN architecture preservation, all-family nested-CV smoke execution, CSV/XLS/XLSX, header normalization, retained duplicate observations, rejected missing values, output preservation, and metrics reconstructed from saved predictions.
-- CLI versus configurable experiment notebook: matching predictions, fold/pooled metrics, summaries and split JSON for the same synthetic dataset and configuration.
-- Both notebook code paths executed, including results analysis and regenerated plots, with local synthetic paths/model/fold configuration substituted for the examples.
-- Notebook JSON/code compilation, Python compilation, `git diff --check`, and Ruff E4/E7/E9/F/I checks passed.
+The recorded local validation run passed **13 tests without skips**. The test suite covers:
 
-Test environment: Python 3.12.14; NumPy 2.3.5; pandas 2.2.3; scikit-learn 1.8.0; matplotlib 3.10.8; XGBoost 3.4.1; CatBoost 1.2.10; TensorFlow CPU 2.20.0; xlrd 2.0.1; openpyxl 3.1.5. Each actual run saves its own complete dependency manifest.
+- Isolation of outer evaluation observations from model fitting and parameter selection.
+- Scaler fitting on the corresponding training rows.
+- Unchanged fold-specific selection and predictions when only that fold's held-out labels are perturbed.
+- Seeded repeatability, including neural training.
+- Stacking and neural-network architecture definitions.
+- Nested evaluation of every model family with reduced training budgets.
+- CSV, XLS, and XLSX loading, column-name normalization, and observation preservation.
+- Rejection of invalid selected inputs and protection of existing output directories.
+- Agreement between saved predictions and reported metrics.
 
-CI repeats the tests on pushes and pull requests. Reservoir evaluation must be run separately with the local input files; existing PDF figures are historical and do not become corrected results through this refactor.
+The command-line workflow and configurable experiment notebook produced identical predictions, metric tables, and split records for the same synthetic input and configuration. Both notebook code paths were executed, including results analysis and plot generation.
+
+Python and notebook code compilation, Ruff E4/E7/E9/F/I checks, and `git diff --check` also passed. GitHub Actions runs the test suite for pushes and pull requests.
+
+## Recorded environment
+
+| Dependency | Version |
+| --- | --- |
+| Python | 3.12.14 |
+| NumPy | 2.3.5 |
+| pandas | 2.2.3 |
+| scikit-learn | 1.8.0 |
+| matplotlib | 3.10.8 |
+| XGBoost | 3.4.1 |
+| CatBoost | 1.2.10 |
+| TensorFlow CPU | 2.20.0 |
+| xlrd | 2.0.1 |
+| openpyxl | 3.1.5 |
+
+Each experiment saves its own complete dependency manifest.
+
+## Validation scope
+
+Software validation uses synthetic inputs and explicitly reduced search or training budgets. It exercises the production model architectures but does not establish predictive performance on reservoir datasets or complete the full default hyperparameter searches.
+
+Dataset-level evaluation must be performed using the configured experiment workflow. Archived PDF reports describe earlier experiments and are not outputs of this validation run.
