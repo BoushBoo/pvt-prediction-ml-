@@ -39,4 +39,4 @@ Each experiment saves its own complete dependency manifest.
 
 Software validation uses synthetic inputs and explicitly reduced search or training budgets. It exercises the production model architectures but does not establish predictive performance on reservoir datasets or complete the full default hyperparameter searches.
 
-Dataset-level evaluation must be performed using the configured experiment workflow. Archived PDF reports describe earlier experiments and are not outputs of this validation run.
+Dataset-level evaluation must be performed using the configured experiment workflow. Earlier PDF reports can be recovered from Git history and are not outputs of this validation run.

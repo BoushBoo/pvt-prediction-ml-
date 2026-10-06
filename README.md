@@ -11,7 +11,7 @@ The framework provides:
 - Consistent metrics and figures generated from saved held-out predictions.
 - Experiment records containing split membership, parameters, predictions, and dependency versions.
 
-Dataset evaluation is performed locally. The automated tests use synthetic inputs; existing PDF reports document earlier experiments.
+Dataset evaluation is performed locally. The automated tests use synthetic inputs.
 
 ## Inputs and targets
 
@@ -135,4 +135,4 @@ Automated tests cover fold isolation, preprocessing, deterministic execution, in
 
 Shuffled cross-validation evaluates new samples from the same dataset mixture. Generalization to unseen wells requires a separate well-held-out study. Model-family rankings and fold standard deviations should be interpreted within this evaluation scope.
 
-Earlier experiment notebooks remain available in Git history. PDFs under `Phase 1/` and `Phase 2/` are archived reports and are separate from results produced by the current workflow.
+Earlier experiment notebooks and PDF reports remain available in Git history. The current branch contains the shared workflow and its two notebooks.

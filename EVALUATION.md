@@ -77,4 +77,4 @@ Shuffled folds estimate performance on new samples from the same dataset mixture
 
 Each family is evaluated independently. Selecting an overall winner after inspecting outer scores introduces an additional selection step; the winner's score is not an independent evaluation of that choice.
 
-Earlier notebooks and PDF reports document a previous evaluation procedure. The current workflow separates tuning from held-out scoring, standardizes fold-local preprocessing, and generates all figures from saved evaluation predictions. Results from these procedures should be reported separately. Earlier notebooks can be recovered from Git history before the workflow refactor.
+Earlier notebooks and PDF reports, available in Git history, document a previous evaluation procedure. The current workflow separates tuning from held-out scoring, standardizes fold-local preprocessing, and generates all figures from saved evaluation predictions. Results from these procedures should be reported separately. Earlier notebooks can be recovered from Git history before the workflow refactor.
