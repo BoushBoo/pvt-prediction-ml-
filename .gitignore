@@ -187,3 +187,9 @@ Headers/
 *.bak
 *.swp
 
+
+# Raw reservoir data and generated evaluation artifacts stay local.
+Dataset/
+data/
+results/
+*.egg-info/
